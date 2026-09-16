@@ -1,0 +1,30 @@
+{
+  "name": "@agentruntime/task-graph",
+  "version": "0.1.0",
+  "description": "DAG-based workflow engine for composable, inspectable multi-step operations",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/",
+    "!dist/__tests__",
+    "!dist/**/*.js.map"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/k-kruusi/claude-supervisor.git",
+    "directory": "dependencies/task-graph"
+  },
+  "devDependencies": {
+    "@types/node": "^25.3.2",
+    "typescript": "^5.0.0",
+    "vitest": "^3.0.0"
+  }
+}
